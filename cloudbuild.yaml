@@ -1,12 +1,13 @@
 steps:
 # Test step for variable substitution
 - name: 'ubuntu'
-  args: ['echo', '${_EMMA}']
-#  env:
+  args: ['echo', '${_ALESSANDRA}']
+  env:
 #  - 'BUILD=$BUILD_ID'
 #  - 'PROJECT_ID=$PROJECT_ID'
 #  - 'PROJECT_NUMBER=$PROJECT_NUMBER'
 #  - 'REV=$REVISION_ID'
+   - _ALESSANDRA='Alessandra'
 
 # Build the backend image
 #- name: 'gcr.io/cloud-builders/docker'
