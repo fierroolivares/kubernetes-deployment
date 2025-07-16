@@ -3,8 +3,9 @@ steps:
 - name: 'bash'
   script: |
     #!/usr/bin/env bash
-    sh variables.sh
+    bash variables.sh
     env
+    echo $TEST
 #  env:
 #  - 'BUILD=$BUILD_ID'
 #  - 'PROJECT_ID=$PROJECT_ID'
