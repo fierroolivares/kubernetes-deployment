@@ -40,17 +40,17 @@ steps:
 #    done
 
 # Deploy to GKE
-#- name: 'gcr.io/cloud-builders/gke-deploy'
-#  args:
-#  - 'run'
-#  - '--filename=kubernetes'
-#  - '--location=${_GKE_CLUSTER_LOCATION}'
-#  - '--cluster=${_GKE_CLUSTER_NAME}'
+- name: 'gcr.io/cloud-builders/gke-deploy'
+  args:
+  - 'run'
+  - '--filename=kubernetes'
+  - '--location=${_GKE_CLUSTER_LOCATION}'
+  - '--cluster=${_GKE_CLUSTER_NAME}'
 
 substitutions:
-#  _GKE_CLUSTER_NAME: 'cluster-gcp-uplift'
-#  _GKE_CLUSTER_LOCATION: 'us-west1-a'
-#  _GCP_PROJECT_ID: 'fierroolivares-462101'
+  _GKE_CLUSTER_NAME: 'cluster-gcp-uplift'
+  _GKE_CLUSTER_LOCATION: 'us-west1-a'
+  _GCP_PROJECT_ID: 'fierroolivares-462101'
  
 
 options:
