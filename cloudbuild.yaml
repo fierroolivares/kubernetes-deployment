@@ -7,7 +7,6 @@ steps:
 #  - 'PROJECT_ID=$PROJECT_ID'
 #  - 'PROJECT_NUMBER=$PROJECT_NUMBER'
 #  - 'REV=$REVISION_ID'
-   - _ALESSANDRA='Alessandra'
 
 # Build the backend image
 #- name: 'gcr.io/cloud-builders/docker'
@@ -44,10 +43,11 @@ steps:
 #  - '--location=${_GKE_CLUSTER_LOCATION}'
 #  - '--cluster=${_GKE_CLUSTER_NAME}'
 
-#substitutions:
+substitutions:
 #  _GKE_CLUSTER_NAME: 'cluster-gcp-uplift'
 #  _GKE_CLUSTER_LOCATION: 'us-west1-a'
 #  _GCP_PROJECT_ID: 'fierroolivares-462101'
+  _ALESSANDRA: 'Alessandra'
 
 options:
   logging: CLOUD_LOGGING_ONLY
