@@ -25,8 +25,8 @@ steps:
 #  args: ['push', 'gcr.io/${PROJECT_ID}/backend:latest']
 
 # Push the frontend image to Artifact Registry
-#- name: 'gcr.io/cloud-builders/docker'
-#  args: ['push', 'gcr.io/${PROJECT_ID}/frontend:latest']
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['push', 'gcr.io/${PROJECT_ID}/frontend:latest']
 
 ## Substitute variables in Kubernetes manifests
 #- name: 'gcr.io/cloud-builders/gcloud'
