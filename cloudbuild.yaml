@@ -17,8 +17,8 @@ steps:
 #  args: ['build', '-t', 'gcr.io/${PROJECT_ID}/backend:latest', '-f', 'Dockerfile.backend', '.']
 
 # Build the frontend image
-#- name: 'gcr.io/cloud-builders/docker'
-#  args: ['build', '-t', 'gcr.io/${PROJECT_ID}/frontend:latest', '-f', 'Dockerfile', '.']
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-t', 'gcr.io/${PROJECT_ID}/frontend:latest', '-f', 'Dockerfile', '.']
 
 # Push the backend image to Artifact Registry
 #- name: 'gcr.io/cloud-builders/docker'
